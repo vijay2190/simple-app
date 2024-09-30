@@ -1,0 +1,12 @@
+[Unit]
+Description=AMI Sample app
+After=xyz.openbmc_project.User.Manager.service
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/bin/hello-ami
+
+[Install]
+WantedBy=multi-user.target
+
